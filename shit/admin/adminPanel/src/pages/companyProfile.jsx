@@ -26,7 +26,7 @@ const CompanyProfile = ({children}) => {
     <div>
       {/* Navbar */}
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/">Company Name</Navbar.Brand>
+        <Navbar.Brand href="/home">Company Name</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link as={Link} to="/orders">Orders</Nav.Link>
           <Nav.Link href="/customers">Customers</Nav.Link>

@@ -10,6 +10,7 @@ import InvoiceForm from './pages/InvoiceForm'
 
 import Customers from './pages/customers'
 import RawMaterials from './pages/RawMaterials'
+import Home from './pages/Home'
 function App() {
 
   return (
@@ -25,6 +26,12 @@ function App() {
         
         <CompanyProfile>
               <Registration />
+        </CompanyProfile>
+        } />
+        <Route path='/home' element={
+        
+        <CompanyProfile>
+              <Home />
         </CompanyProfile>
         } />
         <Route path='/companyprofile' element={<CompanyProfile/>} />
