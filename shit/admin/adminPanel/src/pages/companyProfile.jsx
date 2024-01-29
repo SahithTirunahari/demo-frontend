@@ -81,3 +81,4 @@ const CompanyProfile = ({children}) => {
 };
 
 export default CompanyProfile;
+
