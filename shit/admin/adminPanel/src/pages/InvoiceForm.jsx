@@ -56,14 +56,15 @@ const InvoiceForm = () => {
   };
 
   const calculateTotal = () => {
-    return rows.reduce((total, row) => total + row.amount, 0);
+    const total=rows.reduce((total, row) => total + row.amount, 0);
+    return total.toFixed(2);
   };
   const calculateGrandTotal = () => {
     const totalAmount = rows.reduce((total, row) => total + row.amount, 0);
     const sgst = (totalAmount * 9) / 100; // Replace sgstRate with your SGST rate
     const cgst = (totalAmount * 9) / 100; // Replace cgstRate with your CGST rate
     const grandTotal = totalAmount + sgst + cgst;
-    return grandTotal;
+    return grandTotal.toFixed(2);
   };
   const calSgst=()=>{
     const totalAmount = rows.reduce((total, row) => total + row.amount, 0);
