@@ -18,9 +18,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={
-          <CompanyProfile>
+          
                   <Login />
-          </CompanyProfile>
+         
         } />
         <Route path='/register' element={
         
@@ -65,3 +65,4 @@ function App() {
 }
 
 export default App
+
