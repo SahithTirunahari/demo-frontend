@@ -24,9 +24,9 @@ function App() {
         } />
         <Route path='/register' element={
         
-        <CompanyProfile>
+        
               <Registration />
-        </CompanyProfile>
+        
         } />
         <Route path='/home' element={
         
