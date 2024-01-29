@@ -1,0 +1,12 @@
+.orders-page {
+    margin: 20px; /* Adjust margin as needed */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  }
+  
+  .orders-table {
+    max-width: 800px; /* Limit the width of the table */
+    margin: 0 auto; /* Center the table horizontally */
+  }

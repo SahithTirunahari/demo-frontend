@@ -1,0 +1,15 @@
+
+
+  .registration-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .registration-form-wrapper {
+    max-width: 400px; /* Adjust the max-width as needed */
+    width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  

@@ -1,0 +1,277 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+  
+  /* Position GST ID in the top left corner */
+  .top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Position cell number in the top right corner */
+  .top-right {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    left: 550px;
+  }
+
+body {
+    font-family: roboto;
+    background: white;
+}
+
+.material-icons {
+    cursor: pointer;
+    font-family: 'material-icons'
+    
+}
+
+.circle {
+    position: absolute;
+    left: 75px; /* Adjust to align the circle properly */
+    width: 24px; /* Adjust based on the plus sign size */
+    height: 24px; /* Adjust based on the plus sign size */
+    border-radius: 50%;
+    background-color: cyan; /* Adjust the color as needed */
+    opacity: 0.3; /* Adjust the opacity as needed */
+  }
+  
+.invoice-container {
+    position: relative;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.invoice-header {
+    position: relative;
+    display: flex;
+    padding: 30px 0%;
+    width: 100%;
+}
+
+.title {
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: rgb(66, 66, 66);
+}
+
+.date {
+    padding: 5px 0px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: rgb(156, 156, 156);
+}
+
+.invoice-number {
+    white-space: nowrap;
+    text-align: center;
+    margin-right: 20px; /* Adjust this value as needed */
+}
+.invoice-number-value{
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+.space {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+table {
+    table-layout: auto;
+    width: 100%;
+}
+table, th, td {
+    border-collapse: collapse;
+  }
+
+th {
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-bottom-style: dashed;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: gray;
+    text-align: left;
+    
+}
+
+
+td {
+    padding: 10px 0px;
+    border-bottom: 0.5px solid rgb(226, 226, 226);
+    text-align: left;
+    
+
+    
+}
+
+.dashed {
+    border-bottom: 1px solid rgb(187, 187, 187);
+    border-bottom-style: dashed;
+}
+
+.total {
+    font-weight: 800;
+    font-size: 15px !important;
+    color: black;
+}
+.bankName{
+    margin-left: 10px;
+}
+.email{
+    width:auto;
+}
+input[type=number] {
+    text-align: center ;
+    max-width: auto;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+input[type=text] {
+    max-width: 170px;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border-radius: 5px;
+    
+    background: #ffffff;
+    box-shadow:  11px 11px 22px #d9d9d9, 
+             -11px -11px 22px #ffffff;
+}
+
+input[type=tel]:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow:  11px 11px 22px #d9d9d9, 
+             -11px -11px 22px #ffffff;
+}
+input[type=email]:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow:  11px 11px 22px #d9d9d9, 
+             -11px -11px 22px #ffffff;
+}
+
+input[type=number]:focus {
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow:  11px 11px 22px #d9d9d9, 
+             -11px -11px 22px #ffffff;
+}
+/*Hide Arrows From Input Number*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.float{
+    
+    width:40px;
+    height:40px;
+    background-color:#FF1D89;
+    color:#FFF;
+    border-radius:100%;
+    text-align:center;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.048),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.069),
+  0 12.5px 10px rgba(0, 0, 0, 0.085),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.101),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.122),
+  0 100px 80px rgba(0, 0, 0, 0.17);
+}
+
+.float:hover {
+    background-color:#ff057e;
+}
+
+.plus{
+    margin-top:10px;
+}
+
+#sum {
+    text-align: right;
+    width: 100%;
+}
+.address{
+    margin-left: 20px;
+}
+
+#sum input[type=text] {
+    width: 100%;
+    font-size: 10px !important;
+    color: black;
+    text-align: right !important;  
+}
+.button2 {background-color: #008CBA;
+}
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  table input {
+    width: 100px; /* Adjust the width as needed */
+    /* Add other styles such as padding, margin, etc. */
+  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* body {
+        background: lemonchiffon;
+    } */
+    .invoice-container {
+        border: solid 1px gray;
+        width: 60%;
+        margin: 50px auto;
+        padding: 40px;
+        padding-bottom: 100px;
+        border-radius: 5px;
+        background: white;
+        box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07);
+    }
+
+    .title-date {
+        width: 20%;
+    }
+    .invoice-number {
+        width: 20%;
+    }
+    .space {
+        width: 80%;
+    }
+
+}

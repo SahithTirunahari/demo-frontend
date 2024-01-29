@@ -1,0 +1,122 @@
+[
+    {
+        "meta":{
+            "CompanyName":"MahaLakshmi",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":0,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"vijayaLakshmi",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":2,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"Asthalakshmi",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":0,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"dhanaLakshmi",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":1,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"rajyaLakshmi",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":0,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"Nikhil",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":0,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"Aditya",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":0,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"Hello world",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":1,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"Bye World",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":2,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"Nikhitha",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":2,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"Nallamasss",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":1,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    },
+    {
+        "meta":{
+            "CompanyName":"BOOmBOOm",
+            "Description":"Lavdalo company",
+            "GSTID":"1234567890",
+            "Status":1,
+            "Contact":1234567890,
+            "email":"nikhil@123.com"
+        }
+    }
+]
