@@ -13,7 +13,7 @@ const Registration = () => {
     password: "",
   });
 
-  const [userType, setUserType] = useState("");
+  const [userType, setUserType] = useState("company");
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
