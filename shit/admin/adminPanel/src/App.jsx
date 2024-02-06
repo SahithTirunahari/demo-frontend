@@ -55,7 +55,9 @@ function App() {
                 <RawMaterials />
           </CompanyProfile>
         }/>
-        <Route path="/invoice" element={<InvoiceForm/>} />
+        <Route path="/invoice" element={
+        <InvoiceForm/>
+        } />
         
       </Routes>
     </BrowserRouter>

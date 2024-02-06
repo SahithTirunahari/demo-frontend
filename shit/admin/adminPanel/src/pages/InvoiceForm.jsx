@@ -6,8 +6,8 @@ import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import Icon from '@mui/material/Icon';
 import { useTheme } from '@mui/material/styles';
-
-
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const InvoiceForm = () => {
   const [AccountNo,setAccountNo]=useState('');
@@ -76,6 +76,11 @@ const InvoiceForm = () => {
     const cgst = (totalAmount * 9) / 100;
     return cgst
   }
+  const navigate=useNavigate()
+  const handleBack = () => {
+    navigate('/orders');
+    window.close();
+  };
   const generatePDF = async () => {
     const input = document.getElementById('invoice-container');
   
@@ -113,9 +118,11 @@ const InvoiceForm = () => {
     const theme = useTheme();
     return theme.palette.mode === 'dark';
   };
+  
   const isDarkMode = useIsDarkMode();
 return (
     <div id="invoice-container" className="invoice-container">
+      <Button variant="outline-primary" onClick={handleBack}>Back</Button>
       {/* GST ID */}
       <div className="top-left">
         <p>GST ID: {gstid}</p>

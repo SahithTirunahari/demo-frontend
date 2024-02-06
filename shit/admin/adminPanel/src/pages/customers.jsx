@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import CustomerOrder from './CustomerOrder'; // Import the CustomerOrder component
-
+import { Link } from 'react-router-dom';
 const Customers = () => {
   const [customers, setCustomers] = useState([
     {
@@ -31,11 +31,17 @@ const Customers = () => {
   }, []);
 
   return (
-    <div className="container mt-5"> {/* Add Bootstrap container class */}
-      <div className="row justify-content-center"> {/* Center the content */}
-        <div className="col-md-8"> {/* Adjust the column width as needed */}
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-8">
           {customers.map((customer) => (
-            <CustomerOrder key={customer.id} customer={customer} />
+            <div key={customer.id} className="mb-3">
+              <CustomerOrder customer={customer} />
+              {/* Button for customer details */}
+              <Link to={`/customer/${customer.id}`} className="btn btn-primary">
+                View Details
+              </Link>
+            </div>
           ))}
         </div>
       </div>

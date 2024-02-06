@@ -22,7 +22,7 @@ const Login = () => {
       setShow(true);
     }else{
       localStorage.setItem("token","loginSuccess");
-      navigate('/companyprofile')
+      navigate('/home')
     }
     setLoading(false);
   };
