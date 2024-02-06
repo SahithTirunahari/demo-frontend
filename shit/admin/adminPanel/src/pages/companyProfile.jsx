@@ -1,7 +1,8 @@
 import {useEffect } from "react";
-import { Navbar, Nav, Table } from "react-bootstrap";
+import { Navbar, Nav, Table, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 //import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const CompanyProfile = ({children}) => {
   // Mock data for demonstration
@@ -9,6 +10,13 @@ const CompanyProfile = ({children}) => {
 //   const [customers, setCustomers] = useState([]);
 //   const [employees, setEmployees] = useState([]);
 //   const [rawMaterials, setRawMaterials] = useState([]);
+const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // Implement logout logic here
+    // For example, clear local storage or remove authentication token
+    navigate("/");
+  };
 
   // Fetch data from API or localStorage upon component mount
   useEffect(() => {
@@ -33,49 +41,11 @@ const CompanyProfile = ({children}) => {
           <Nav.Link as={Link} to="/employee">Employees</Nav.Link>
           <Nav.Link href="/rawMaterials">Raw Materials</Nav.Link>
         </Nav>
+        <div className="ml-auto">
+          <Button variant="outline-light" onClick={handleLogout}>Logout</Button>
+        </div>
       </Navbar>
       <div className="content">{children}</div>
-      {/*<div id="orders">
-        <h2>Orders</h2>
-        <Table striped bordered hover>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Order ID</th>
-              <th>Customer</th>
-              <th>Product</th>
-              <th>Quantity</th>
-            </tr>
-          </thead>
-          <tbody>
-            /{/* Render orders data */}
-         {/* </tbody>
-        </Table>
-      </div>
-
-      {/* Customers */}
-      {/*<div id="customers">
-        <h2>Customers</h2>
-        <ul>
-          {/* Render customers data */}
-        {/*</ul>
-      </div>
-
-      {/* Employees */}
-      {/*<div id="employees">
-        <h2>Employees</h2>
-        <ul>
-          {/* Render employees data */}
-        {/*</ul>
-      </div>
-
-      {/* Raw Materials */}
-      {/*<div id="rawMaterials">
-        <h2>Raw Materials</h2>
-        <ul>
-          {/* Render raw materials data */}
-        {/*</ul>
-      </div>*/}
     </div>
   );
 };
